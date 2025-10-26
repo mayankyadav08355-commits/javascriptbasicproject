@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <img class="logo" src="img/WhatsApp Image 2025-10-15 at 10.56.55_4cf220dd.jpg" alt="">
+            <div class="nav_btn">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <button class="user_btn">Username</button>
+        </nav>
+        <section class="hero">
+            <div class="contant">
+                <h2>Revitalize Your Clothes with Expert</h2>
+                <h3>Laundry Services!</h3>
+                <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup
+                    and
+                    rediscover the freshness of your clothes today!</p>
+                <button class="hero_btn"> Book a service today!</button>
+            </div>
+            <div class="contant">
+                <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_80912b09.jpg " alt="">
+            </div>
+        </section>
+
+        <div class="achievments">
+            <h2>Our Achievements</h2>
+            <div>
+                <h3>15+</h3>
+                <p>Laundry Services</p>
+            </div>
+            <div>
+                <h3>240+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div>
+                <h3>2+ Yrs</h3>
+                <p>Experience</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="services">
+                <h2>Our Services</h2>
+                <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                <hr>
+
+
+                <div class="service-item" id="service-item" data-name="Dry Cleaning" data-price="200">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.54_98b95eaf.jpg" alt="">
+                        <span>Dry Cleaning .</span>
+                        <span class="price">₹200.00</span>
+                    </div>
+                    <div><button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+
+                <div class="service-item" id="service-item" data-name="Wash & Fold" data-price="100">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_73b401f7.jpg" alt="">
+                        <span>Wash & Fold .</span>
+                        <span class="price">₹100.00</span>
+                    </div>
+                    <div><button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+
+                <div class="service-item" id="service-item" data-name="Ironing" data-price="30">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_bd5ef942.jpg" alt="">
+                        <span>Ironing .</span>
+                        <span class="price">₹30.00</span>
+                    </div>
+                    <div><button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+
+                <div class="service-item" id="service-item" data-name="Staib Removal" data-price="500">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_8b339e2a.jpg" alt="">
+                        <span>Stain Removal .</span>
+                        <span class="price">₹500.00</span>
+                    </div>
+                    <div> <button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+
+                <div class="service-item" id="service-item" data-name="Leather & Suede Cleaning" data-price="999">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_5ca87326.jpg" alt="">
+                        <span>Leather & Suede Cleaning .</span>
+                        <span class="price">₹999.00</span>
+                    </div>
+                    <div><button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+                <div class="service-item" id="service-item" data-name="Wedding Dress Cleaning" data-price="2800">
+                    <div class="service-info">
+                        <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_39d5b78d.jpg" alt="">
+                        <span>Wedding Dress Cleaning .</span>
+                        <span class="price">₹2800.00</span>
+                    </div>
+                    <div>
+                        <button class="add" id="add1">⊕</button>
+                        <button class="add" id="remove">⊖</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="cart">
+                    <h2>Added Items</h2>
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                        </tbody>
+                    </table>
+
+                    <div class="total">
+                        <span>Total</span>
+                        <span id="total-price">₹0.00</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="book-now">
+                        <h3>Book Now</h3>
+                        <form>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
+                            <div class="input-set">
+                                <div>
+                                    <label for="email">Email ID</label>
+                                    <input type="email" placeholder="Enter Email" required>
+                                </div>
+                                <div>
+                                    <label for="Number">Phone Number</label>
+                                    <input type="number" id="Number" placeholder="000000" required>
+                                </div>
+                            </div>
+                            <button class="book-btn" type="submit">Book now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-services">
+            <div class="footer-service">
+                <img src="img/laundry.png" alt="">
+                <h3>Premium Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    voluptatem rerum.</p>
+            </div>
+            <div class="footer-service">
+                <img src="img/customer-service.png" alt="">
+                <h3>Premium Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    voluptatem rerum.</p>
+            </div>
+            <div class="footer-service">
+                <img src="img/advice.png" alt="">
+                <h3>Premium Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    voluptatem rerum.</p>
+            </div>
+            <div class="footer-service">
+                <img src="img/save-money.png" alt="">
+                <h3>Premium Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    voluptatem rerum.</p>
+            </div>
+
+        </div>
+
+        <div class="f-subscribe">
+            <div class="subscribe-head">
+                <h2>Subscribe to our newsletter.</h2>
+            </div>
+            <div class="subscribe-item">
+                <div class="item-1">
+                    <input type="text" placeholder="Full name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <button class="item-2">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-about">
+            <div class="about-item">
+                <img src="img/WhatsApp Image 2025-10-15 at 10.56.55_4cf220dd.jpg" alt="">
+                <div class="about-us-item">
+                    <h3>About US</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="about-item">
+                <h3>Important Links</h3>
+                <p>About US</p>
+                <p>Contact US</p>
+                <p>privacy Policy</p>
+                <p>Terme of use</p>
+                <p>Refund Policy</p>
+            </div>
+            <div class="about-item">
+                <h3>Contact</h3>
+                <p>mayank55@gmail.com</p>
+                <p>+91 8619573002</p>
+            </div>
+            <div class="about-item">
+                <h3>Follow US</h3>
+                <div class="follow-img">
+                    <img src="img/instagram.png" alt="">
+                    <img src="img/social.png" alt="">
+                    <img src="img/twitter.png" alt="">
+                    <img src="img/youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
